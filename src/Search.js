@@ -1,16 +1,30 @@
 import React, { useState } from "react";
+import axios from "axios";
+import "./styles.css";
 
 export default function Search() {
+  const [ready, setReady] = useState(false);
   let apiKey = "842b36d55cb28eba74a018029d56b04c";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query={query}&key={apiKey}units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query={query}&key=${apiKey}units=metric`;
   let [city, setCity] = useState("");
   let [message, setMessage] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    setMessage(`The temperature in ${city} is 10°C`);
   }
-
+  function handleResponse(response) {
+    setWeatherData({
+      ready: true,
+      coordinates: response.data.coord,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+    });
+  }
   function updateCity(event) {
     setCity(event.target.value);
   }
