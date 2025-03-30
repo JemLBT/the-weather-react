@@ -6,7 +6,7 @@ export default function Search() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setMessage(`The temperature in ${city} is 10°C`);
+    setMessage(`${city}`);
   }
 
   function updateCity(event) {
@@ -22,7 +22,7 @@ export default function Search() {
       <div className="Weather">
         <div className="row">
           <div className="col-6">
-            <h1>New York</h1>
+            <h2>{message}</h2>
             <ul>
               <li>Wednesday 07:00</li>
               <li>Mostly Cloudy </li>
@@ -48,7 +48,6 @@ export default function Search() {
           </ul>
         </div>
       </div>
-      <h2>{message}</h2>
     </div>
   );
 }
