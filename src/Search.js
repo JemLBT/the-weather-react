@@ -31,12 +31,12 @@ export default function Search() {
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="weather icon"
-          />{" "}
-          6°C{" "}
-        </div>{" "}
+          />
+          6°C
+        </div>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-3">
           <ul>
             <li>Precipitation: 15%</li>
             <li>Humidity: 72%</li>
@@ -44,7 +44,6 @@ export default function Search() {
           </ul>
         </div>
       </div>
-      <h2>{message}</h2>
     </div>
   );
 }
