@@ -3,6 +3,14 @@ import axios from "axios";
 import "./styles.css";
 
 export default function Search() {
+  const [ready, setReady] = useState(false);
+  const [temperature, setTemperature] = useState(null);
+  function handleResponse(response) {
+    setTemperature(response.data.main.temp);
+  }
+
+  const apiKey = "10588b3do607b336f1e63a30b7f6ft4a";
+  const apiUrl = `https://api.shecodes.io/weather/v1/current?query={query}&key=${apiKey}&units=metric`;
   let [city, setCity] = useState("");
   let [message, setMessage] = useState("");
 
