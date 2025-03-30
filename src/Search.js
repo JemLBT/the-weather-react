@@ -6,11 +6,12 @@ export default function Search() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setMessage(`The temperature in ${city} is 10°C`);
+    setMessage("");
   }
 
   function updateCity(event) {
     setCity(event.target.value);
+    z;
   }
 
   return (
