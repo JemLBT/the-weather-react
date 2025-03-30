@@ -20,15 +20,11 @@ export default function Search() {
         <input type="submit" value="Search" />
       </form>
       <div className="Weather">
-        <div className="row">
-          <div className="col-6">
-            <h1>New York</h1>
-            <ul>
-              <li>Wednesday 07:00</li>
-              <li>Mostly Cloudy </li>
-            </ul>
-          </div>
-        </div>
+        <h1>New York</h1>
+        <ul>
+          <li>Wednesday 07:00</li>
+          <li>Mostly Cloudy </li>
+        </ul>
       </div>
       <div className="row">
         <div className="col-6">
