@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./styles.css";
 
@@ -29,43 +29,7 @@ export default function Search(props) {
             <input type="search" placeholder="Enter a city" />
             <input type="submit" value="Search" />
           </form>
-
-          <h2>{weatherData.city}</h2>
-          <ul>
-            <li>
-              <FormattedDate date={weatherData.date} />{" "}
-            </li>
-            <li className="text-capitalize">{weatherData.description} </li>
-          </ul>
-
-          <div className="row">
-            <div className="col-8">
-              <img
-                src={weatherData.iconUrl}
-                alt={weatherData.description}
-                width="120px"
-              />
-              <span className="temperatureCity">
-                {Math.round(weatherData.temperature)}
-              </span>
-              <span className="unit">°C</span>
-            </div>
-            <div className="col-4">
-              <ul>
-                <li>
-                  <strong>Pressure:</strong> {weatherData.pressure}
-                </li>
-                <li>
-                  <strong>Humidity: </strong>
-                  {weatherData.humidity} %
-                </li>
-                <li>
-                  <strong>Wind: </strong>
-                  {Math.round(weatherData.wind)} km/h
-                </li>
-              </ul>
-            </div>
-          </div>
+          <WeatherInfo data={weatherData} />
         </div>
       </div>
     );
