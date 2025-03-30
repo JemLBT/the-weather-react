@@ -36,7 +36,7 @@ export default function Search() {
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="weather icon"
-              width="200px"
+              width="120px"
             />
             <span className="temperatureCity">6</span>
             <span className="unit">°C</span>
