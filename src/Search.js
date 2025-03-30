@@ -37,8 +37,8 @@ export default function Search() {
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="weather icon"
             />
-            <div className="temperatureCity">6</div>
-            <div className="unit">°C</div>
+            <span className="temperatureCity">6</span>
+            <span className="unit">°C</span>
           </div>
           <div className="col-4">
             <ul>
