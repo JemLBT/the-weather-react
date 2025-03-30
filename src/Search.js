@@ -15,11 +15,16 @@ export default function Search() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Enter a city" onChange={updateCity} />
-        <input type="submit" value="Search" />
-      </form>
       <div className="Weather">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            onChange={updateCity}
+          />
+          <input type="submit" value="Search" />
+        </form>
+
         <div className="row">
           <div className="col-6">
             <h2>{message}</h2>
