@@ -41,9 +41,15 @@ export default function Search() {
           </div>
           <div className="col-6">
             <ul>
-              <li>Precipitation: 15%</li>
-              <li>Humidity: 72%</li>
-              <li>Wind: 15 km/h</li>
+              <li>
+                <strong>Precipitation:</strong> 15%
+              </li>
+              <li>
+                <strong>Humidity: </strong>72%
+              </li>
+              <li>
+                <strong>Wind:</strong> 15 km/h
+              </li>
             </ul>
           </div>
         </div>
