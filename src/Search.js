@@ -24,7 +24,8 @@ export default function Search() {
           />
           <input type="submit" value="Search" />
         </form>
-
+      </div>
+      <div className="Weather">
         <div className="row">
           <div className="col-6">
             <h2>{message}</h2>
