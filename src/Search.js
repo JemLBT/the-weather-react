@@ -71,7 +71,6 @@ export default function Search(props) {
     );
   } else {
     const apiKey = "10588b3do607b336f1e63a30b7f6ft4a";
-    let city = "New York";
     const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return "app is loading...";
