@@ -35,14 +35,15 @@ export default function Search() {
           6°C{" "}
         </div>{" "}
       </div>
-      <div className="col-6">
-        <ul>
-          <li>Precipitation: 15%</li>
-          <li>Humidity: 72%</li>
-          <li>Wind: 15 km/h</li>
-        </ul>
+      <div className="row">
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 72%</li>
+            <li>Wind: 15 km/h</li>
+          </ul>
+        </div>
       </div>
-
       <h2>{message}</h2>
     </div>
   );
