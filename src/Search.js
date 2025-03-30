@@ -32,7 +32,7 @@ export default function Search() {
         </ul>
 
         <div className="row">
-          <div className="col-6">
+          <div className="col-8">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="weather icon"
@@ -40,7 +40,7 @@ export default function Search() {
             <div className="temperatureCity">6</div>
             <div className="unit">°C</div>
           </div>
-          <div className="col-6">
+          <div className="col-4">
             <ul>
               <li>
                 <strong>Precipitation:</strong> 15%
