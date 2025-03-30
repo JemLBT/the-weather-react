@@ -24,15 +24,13 @@ export default function Search() {
           />
           <input type="submit" value="Search" />
         </form>
-        <div className="row">
-          <div className="col-6">
-            <h2>{message}</h2>
-            <ul>
-              <li>Wednesday 07:00</li>
-              <li>Mostly Cloudy </li>
-            </ul>
-          </div>
-        </div>
+
+        <h2>{message}</h2>
+        <ul>
+          <li>Wednesday 07:00</li>
+          <li>Mostly Cloudy </li>
+        </ul>
+
         <div className="row">
           <div className="col-6">
             <img
@@ -42,14 +40,12 @@ export default function Search() {
             6°C
           </div>
         </div>
-        <div className="row">
-          <div className="col-3">
-            <ul>
-              <li>Precipitation: 15%</li>
-              <li>Humidity: 72%</li>
-              <li>Wind: 15 km/h</li>
-            </ul>
-          </div>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 72%</li>
+            <li>Wind: 15 km/h</li>
+          </ul>
         </div>
       </div>
     </div>
