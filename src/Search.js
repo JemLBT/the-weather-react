@@ -15,6 +15,7 @@ export default function Search() {
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       humidity: response.data.temperature.humidity,
       pressure: response.data.temperature.pressure,
+      date: "Sunday 30th March 2025",
     });
 
     setReady(true);
@@ -31,8 +32,8 @@ export default function Search() {
 
           <h2>{weatherData.city}</h2>
           <ul>
-            <li>Wednesday 07:00</li>
-            <li>{weatherData.description} </li>
+            <li>{weatherData.date}</li>
+            <li className="text-capitalize">{weatherData.description} </li>
           </ul>
 
           <div className="row">
