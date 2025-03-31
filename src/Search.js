@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import WeatherInfo from "./WeatherInfo";
+
 import axios from "axios";
 import "./styles.css";
 
 export default function Search(props) {
   const [ready, setReady] = useState(false);
   const [city, setCity] = useState(props.defaultCity);
-  const [weatherData, setWeatherData] = useState({});
+
   function handleResponse(response) {
     setWeatherData({
       temperature: response.data.temperature.current,
